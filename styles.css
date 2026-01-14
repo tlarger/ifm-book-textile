@@ -154,7 +154,7 @@
      margin: 0;
      display: inline-flex;
      align-items: baseline;
-     padding-left: 48px;     /* aligné desktop avec le header */
+     padding-left: 48px;     /* aligné desktop */
      font-size: 12px;
      font-weight: 600;
      letter-spacing: 0.14em;
@@ -194,7 +194,6 @@
      cursor: pointer;
    }
    
-   /* gauche / droite */
    .carousel__arrow--prev { left: 16px; }
    .carousel__arrow--next { right: 16px; }
    
@@ -263,6 +262,7 @@
    /* =========================
       MOBILE (<= 600px)
       - espace latéral global
+      - header avec marge visible
       - CTA centrés + même style que THAÏS LARGER
       ========================= */
    @media (max-width: 600px) {
@@ -273,16 +273,16 @@
        padding-right: 14px;
      }
    
-     /* On enlève les paddings internes qui feraient double marge */
+     /* Header : on remet une marge latérale (sinon il colle aux bords) */
      .topbar__inner{
-       padding: 10px 0 8px !important;
+       padding: 10px 14px 8px !important; /* IMPORTANT */
      }
    
      .topbar__left{
        width: 100%;
        gap: 10px;
        padding: 6px 0;
-       margin-left: 0; /* aligné avec le padding du body */
+       margin-left: 0; /* aligné avec la marge du header */
      }
    
      .topbar__brand,
@@ -300,7 +300,7 @@
      }
    
      .page-title__text{
-       padding-left: 0; /* aligné avec le padding du body */
+       padding-left: 0; /* aligné avec body */
        font-size: 12px;
        letter-spacing: 0.14em;
        color: #7a7a7a;
@@ -322,12 +322,13 @@
    
      /* CTA mobile : centré, aéré, même style que "THAÏS LARGER" */
      .project-nav{
-       flex-direction: column;     /* évite que ça se colle */
+       flex-direction: column;
        align-items: center;
        justify-content: center;
        gap: 18px;
        padding: 28px 0 20px;
        margin-top: 18px;
+   
        font-family: "Helvetica Neue", Arial, sans-serif;
        font-size: 14px;            /* même taille que le brand en mobile */
        font-weight: 700;

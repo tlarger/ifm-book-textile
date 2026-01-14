@@ -32,10 +32,10 @@
    }
    
    .topbar__inner{
-     margin: 0 !important;
-     max-width: none !important;
-     padding: 10px 0 10px !important;
-   }
+    margin: 0 !important;
+    max-width: none !important;
+    padding: 10px 15px 10px !important; /* 15px gauche + droite */
+  }
    
    /* Bloc header */
    .topbar__left{

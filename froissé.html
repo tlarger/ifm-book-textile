@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Book Textile — COTON FROISSÉ </title>
+  <title>Book Textile — CRÊPE FROISSÉ ROUGE </title>
   <link rel="stylesheet" href="styles.css">
 </head>
   <!-- HEADER -->
@@ -25,9 +25,11 @@
   
   <!-- PAGE -->
   <main class="layout">
-    <!-- Colonne image -->
+    
+<!-- Caroussel images-->
     <section class="layout__image">
-      <img
+      <div class="carousel">
+        <img
         class="hero-img"
         src="froissé.JPG"
         width="1200"
@@ -35,15 +37,40 @@
       loading="eager"
       decoding="async"
         alt="Photo textile coton froissé"
-      />
+        >
+        
+        <img
+        src="froisse.avif"
+        width="1200"
+    height="1600"
+    loading="eager"
+    decoding="async"
+        class="carousel__img"
+      >
+
+    
+
+         <!-- Flèche gauche -->
+  <button class="carousel__arrow carousel__arrow--prev" aria-label="Image précédente">
+      ←
+    </button>
+
+    <!-- Flèche droite -->
+    <button class="carousel__arrow carousel__arrow--next" aria-label="Image suivante">
+      →
+    </button>
+      </div>
     </section>
+    
+
+
 
     <!-- Colonne texte -->
     <aside class="layout__text">
       <div class="info">
         <div class="info__head">
           <div>
-            <p class="info__title">COTON FROISSÉ</p>
+            <p class="info__title">VISCOSE EFFET CRÊPE FROISSÉ</p>
             <p class="info__sub">Nonasource</p>
           </div>
         </div>
@@ -53,7 +80,8 @@
             L’étoffe est composée de viscose, probablement à 100% (aspect, toucher et comportement compatibles avec une viscose ; confirmé par test de brûlage). La viscose est une fibre chimique artificielle.
             <p><strong>Fil</strong><br>
             Le fil utilisé est un fil de fibres discontinues (viscose issue de cellulose régénérée), simple et peu tordu. Le fil est relativement fin, favorisant la fluidité et le tombé
-                <p><strong>Construction textile</strong><br>
+            
+            <p><strong>Construction textile</strong><br>
             Il s’agit d’un textile chaîne et trame.
           </p>
 
@@ -62,7 +90,7 @@
         </p>
 
           <p><strong>Ennoblissement couleur</strong><br>
-            La couleur noire est obtenue par teinture en pièce, après tissage, pour une couleur homogène.
+            La couleur rouge est obtenue par teinture en pièce, après tissage, pour une couleur homogène.
           
             <p><strong>Ennoblissement d’apprêt</strong><br>
                 - Froissage / plissage permanent (apprêt mécanique et/ou thermochimique) <br>
@@ -72,9 +100,23 @@
           <p><strong>Contexture (chaîne et trame)</strong><br>
             La contexture du tissu est caractérisée par une densité faible à moyenne, lui conférant un aspect légèrement transparent. La main est souple, fluide et légère, avec un tombé très fluide et aérien, favorisant le mouvement et la légèreté du vêtement. </p>
            
-            <p><strong>Poids et usage imaginé</strong><br>
+            <p><strong>Poids</strong><br>
                 Le tissu présente un poids léger, estimé entre 60 et 100 g/m², ce qui correspond à des étoffes typiquement utilisées pour la confection de blouses, robes légères ou vêtements d’été. </p>    </aside>
-  </main>
+ 
+         
+              <p><strong>Produit fini</strong><br>
+                ROBE FROISSÉE À BRETELLES FINES, H&M <br>
+                  Collection : H&M EDITION, catalogue actuel 2025 <br>
+            Composition :  <br>
+            - Couche extérieure: Polyester 82%, Polyamide 18% <br>
+- Doublure: Coton 100% <br>
+            Prix de vente : 69,99 €</p>
+ 
+ 
+ 
+              </main>
+
+
 
 <!-- CTA pour changer de page -->
 <nav class="project-nav" aria-label="Navigation projets">
@@ -87,3 +129,4 @@
 
 </body>
 </html>
+<script src="carousel.js" defer></script>
